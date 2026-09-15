@@ -9,8 +9,9 @@ Static site, served from the repo root — no build step, no framework.
 - `assets/site.css`, `assets/site.js` — shared styles (including the keyframe animations and hover effects) and the small vanilla-JS behaviors (logo squish, "how it works" step picker). No React/build tooling — plain CSS and JS.
 - `uploads/` — images referenced by the pages.
 - `robots.txt`, `sitemap.xml` — for search engine crawling once the site is live at `gia-derma.com`.
-- `landing_page/` — **not served.** Holds the original Claude-Design canvas source (`Gia teal hero.dc.html` + `support.js`) that the current static pages were built from. Useful if you want to go back into the visual canvas editor, but it's a separate copy — content changes need to be made in the real pages above (or ported over from here), since the two will otherwise drift out of sync.
+
+Edit the pages above directly — there's no separate design source anymore. (An earlier version of this site was built from a Claude-Design canvas file under `landing_page/`; that's been removed since it required manually porting every edit over to these files to keep them in sync. It's still in git history if ever needed again.)
 
 ## Hosting
 
-Not yet deployed. Plan is GitHub Pages, serving from the repo root, with `gia-derma.com` (already purchased) as a custom domain — still needs: enabling Pages in repo settings, pointing the domain's DNS at GitHub Pages, and adding a `CNAME` file.
+Live on GitHub Pages at `gia-derma.com`, served from the repo root with a `CNAME` file for the custom domain.

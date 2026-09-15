@@ -25,7 +25,8 @@
     { title: "Scan your products", body: "Point your camera at the bottle. We log the actives and the start date, so nothing gets fuzzy three months from now." },
     { title: "Upload your photos", body: "New ones, or that messy camera roll from eight months ago. Old photos still count, and we line them up for you." },
     { title: "Add the context", body: "New diet? On your period? Started lifting? Note as much or as little as you feel like, it all sharpens the read." },
-    { title: "Stay consistent", body: "Then just show up. Weekly and monthly summaries tell you what actually moved, and what to do about it." }
+    { title: "Let the model analyze", body: "Our AI reads your photos the same unbiased way every time: no placebo effect, no squinting at photos and guessing." },
+    { title: "Stay consistent", body: "Then just show up. Our machine learning model will analyze your photos and provide weekly and monthly summaries to show you what's actually moved." }
   ];
 
   var tabs = Array.prototype.slice.call(stepsEl.querySelectorAll(".step-tab"));
@@ -53,7 +54,7 @@
         ? "0 20px 30px rgba(30,90,160,.32), inset 0 -9px 15px rgba(20,80,160,.3)"
         : "0 14px 22px rgba(30,90,160,.2), inset 0 -8px 13px rgba(45,110,180,.2)";
     });
-    numEl.textContent = "Step " + (step + 1) + " of 4";
+    numEl.textContent = "Step " + (step + 1) + " of " + flowSteps.length;
     titleEl.textContent = flowSteps[step].title;
     bodyEl.textContent = flowSteps[step].body;
   }
