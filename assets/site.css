@@ -36,6 +36,11 @@ a:hover { color:#0b2545; }
 .pill-scale { transition: transform .3s cubic-bezier(.2,1.5,.35,1); }
 .pill-scale:hover { transform: scale(1.02,.95); }
 
+/* Social icon links (Instagram/TikTok, etc.) */
+.social-icon { display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; border-radius:50%; transition:transform .25s cubic-bezier(.2,1.4,.35,1), box-shadow .25s ease; }
+.social-icon:hover { transform:translateY(-3px) scale(1.06); }
+.social-icon svg { width:22px; height:22px; display:block; }
+
 /* "How it works" step picker */
 .step-tab { flex:1 1 160px; min-width:130px; display:flex; flex-direction:column; align-items:center; gap:12px; padding:0 6px; border:0; background:none; cursor:pointer; transition:color .25s ease; font:inherit; }
 .step-dot { position:relative; width:clamp(46px,5vw,72px); height:clamp(46px,5vw,72px); border-radius:50%; display:grid; place-items:center; font-family:'Baloo 2',cursive; font-weight:800; font-size:clamp(20px,2.2vw,30px); transition:transform .3s cubic-bezier(.2,1.4,.35,1), background .3s ease, color .3s ease; }
