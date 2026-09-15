@@ -26,7 +26,7 @@
     { title: "Upload your photos", body: "New ones, or that messy camera roll from eight months ago. Old photos still count, and we line them up for you." },
     { title: "Add the context", body: "New diet? On your period? Started lifting? Note as much or as little as you feel like, it all sharpens the read." },
     { title: "Let the model analyze", body: "Our AI reads your photos the same unbiased way every time: no placebo effect, no squinting at photos and guessing." },
-    { title: "Stay consistent", body: "Then just show up. Our machine learning model will analyze your photos and provide weekly and monthly summaries to show you what's actually moved." }
+    { title: "Stay consistent", body: "Then just show up. Our model will provide weekly and monthly summaries to show you what's actually moved." }
   ];
 
   var tabs = Array.prototype.slice.call(stepsEl.querySelectorAll(".step-tab"));
