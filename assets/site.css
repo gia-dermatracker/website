@@ -41,6 +41,15 @@ a:hover { color:#0b2545; }
 .social-icon:hover { transform:translateY(-3px) scale(1.06); }
 .social-icon svg { width:22px; height:22px; display:block; }
 
+/* Story page before/after gallery: tretinoin card (2 photos) is 2x the
+   width of the accutane card (1 photo), so all three photos render at
+   the same size. Stacks to one column on narrow screens where a 2:1
+   split would squeeze the photos too small. */
+.story-gallery { grid-template-columns: 2fr 1fr; }
+@media (max-width: 640px) {
+  .story-gallery { grid-template-columns: 1fr; }
+}
+
 /* "How it works" step picker */
 .step-tab { flex:1 1 160px; min-width:130px; display:flex; flex-direction:column; align-items:center; gap:12px; padding:0 6px; border:0; background:none; cursor:pointer; transition:color .25s ease; font:inherit; }
 .step-dot { position:relative; width:clamp(46px,5vw,72px); height:clamp(46px,5vw,72px); border-radius:50%; display:grid; place-items:center; font-family:'Baloo 2',cursive; font-weight:800; font-size:clamp(20px,2.2vw,30px); transition:transform .3s cubic-bezier(.2,1.4,.35,1), background .3s ease, color .3s ease; }
